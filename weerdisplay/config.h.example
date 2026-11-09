@@ -1,0 +1,31 @@
+#pragma once
+// ============================================================
+//  Instellingen. Kopieer dit bestand naar "config.h" en pas het aan.
+//  (config.h staat in .gitignore en wordt dus niet gedeeld.)
+//  Alleen dit bestand (en secrets.h) pas je aan.
+// ============================================================
+
+// ---- Locatie (graden, met punt, als tekst) ----
+#define LATITUDE        "52.16"
+#define LONGITUDE       "4.49"
+#define API_TIMEZONE    "Europe%2FAmsterdam"             // tijdzone voor Open-Meteo
+#define TZ_INFO         "CET-1CEST,M3.5.0,M10.5.0/3"     // tijdzone voor de ESP32 (Nederland)
+
+// ---- Verversing ----
+// Drie verversingen per dag (uren, oplopend). Bij elke verversing schuiven de kolommen op:
+// zie layoutFor in weather.h voor welke dagdelen er dan staan.
+#define REFRESH_H0       6
+#define REFRESH_H1      11
+#define REFRESH_H2      17
+#define REFRESH_H3      23
+
+// ---- Infoscherm (knop op de T5, GPIO 39) ----
+#define INFO_BUTTON_PIN 39
+#define INFO_SECONDS    10            // het infoscherm blijft zo lang staan, of tot je de knop weer indrukt
+
+// ---- Verjaardagen ----
+// Formaat: { {dag, maand}, ... } — dus {25, 12} is 25 december. Vul je eigen datums in.
+#define BIRTHDAYS       { {15, 6}, {25, 12} }
+
+// ---- Scherm ----
+#define SCREEN_ROTATION 1             // 1 of 3: draait het beeld 180 graden

@@ -1,0 +1,34 @@
+# === Geheimen (NOOIT delen) ===
+weerdisplay/secrets.h
+
+# === Persoonlijke instellingen (locatie, verjaardagen) ===
+weerdisplay/config.h
+
+# === Externe bibliotheken (zelf installeren, zie README) ===
+libraries/
+
+# === Grote binaire bestanden ===
+*.AppImage
+zips/
+*.zip
+
+# === Afgeleide/gegenereerde bestanden ===
+*.pdf
+
+# === Lokale documenten (niet op GitHub) ===
+questions.txt
+PLANNING.md
+
+# === Arduino build-output ===
+build/
+*.hex
+*.bin
+*.elf
+
+# === Besturingssysteem / editor ===
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
